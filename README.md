@@ -1,27 +1,35 @@
-# AngularExpress
+# Angular Express
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+## Requirements
+- [Nodejs](https://nodejs.org/en/) ^8.9.1
+- [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
-## Development server
+## Install / Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+# Install dependencies
+npm install
+
+# Start server. The app will automatically reload if you change any of the web app (src/app) or server files.
+npm run dev
+
+# Client url: http://localhost:4200
+# Proxy Server (express API): http://localhost:4200/api --> http://localhost:8000/api
+```
+
+## Build / Production
+
+```bash
+# Folder `./public`
+npm start
+```
 
 ## Code scaffolding
+```bash
+# Generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`
+ng generate component component-name
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## References
+1. https://scotch.io/tutorials/mean-app-with-angular-2-and-the-angular-cli
+2. https://medium.com/@danielkagan/serve-mean-stack-using-angular-cli-f39b33dbad64
